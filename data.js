@@ -31,7 +31,7 @@ export const busquedas = [
     },
     {
     "nombreMateria":"GESTIÓN TECNOLÓGICA",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRacEjDqGZ9qV0Aqi1FH2b2MCD-NT3_SpimhReWzvf3kDtJMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT8-o30o0reuMnJa6iKsHImojUTEudXNNfWSPehHCmnDUDRV8rCghX4hjgxOAzCuof3Fi0wfp1rOxsIw1E6Q7hR6Qn91XKx44MEYnwrHBjBXwawLJk-tSyf3yAQrNWJ41jOCbTrlO_OtltUovar7V2Xveg9CJW2u12Y4Ihh9jo5AKTjeSaFWIKECAdYCLON8j6ju4rtJAE-phppox_F2Oo2nA',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMKiCDi1rSwPgmnk02c7aizYhRrrbf1zVXFldpOn6eEkO7hBc80ap9KBwqVC-oqWjzzRQyXobXhEt8q-eOaOaAsUM0D3sp1JGnPL2a_M58P0TkyWXKB89wG-nKwd1mdkm59b87jDfBPuZ4IrPb-7lLQFf_R2VFmPbLdIzzFII2O8RksHfuieHPgYJxltCIKcn-H1kH14AU_Yx1fPFcWI6XORV_MdzRCGkTDlTMpfL38LTCq1jJiAmsC6Uw_qt7zOvtB8bsxopjhVdNyldshGu-OOMhNAGOmRncgNXlukLdoFK0hpQJ-aV_sI_c49KBrDxSEvwlEJ0KhH-wywyqDsX1ZzOHBxAc5af7Xqw8LeuwJV_wa9_UNAEAaKtsbPr9oCNSaKoAgz4MJVHFbSrcszRslySU7D2X8ZPwUCa0oW8JDRDh_aCYwX6ML658Omy6Jaru1TXjCTWlYE1RsfghRrfr9PFGgBeuagFcYyxPpU-o27ledawjgaGdCF_okGDUd2LWLokzBe1oi6ASXVwZmv-2k3wai0DjZI5JnT_MiWpE6LTQ',
     "gruposBuscados":['020-82'],
     "interesados":[1,3]
     },
@@ -64,6 +64,12 @@ export const busquedas = [
     "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRaoXSUHhizd8bCactH4VcLkBmHQsNTpl2JlITxIglY3S9JMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT8PzWVw9USI0Oh97kVRNIYgn6IQRG8J825Y8ISBEosqwP39kH0CGiey-Gos32G56bOoEg8PjC_fs21bo6OPAqZQc95KotdYE2r6ndqk-cb870I1OA4maGvlTVAqCiqt6uyOIwnSVZe6Ck_seKSwjMMrTPCPS_Dg_OLrTo0rS9dZFzjnVhWj9TzbdZROf0AaixT-UdFtRkPZMmS3I-NSbKvCw',
     "gruposBuscados":['020-82'],
     "interesados":[1]
+    },
+     {
+    "nombreMateria":"CIBERNETICA II",
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMKiCDi1rSwPgmnk02c7aizYhRrrbf1zVXFldpOn6eEkO7hBc80ap9KBwqVC-oqWjzzRQyXobXhEt8q-eOaOaAsUM0D3sp1JGnPL2a_M58P0TkyWXKB89wG-nKwd1mdkm59b87jDfBPuZ4IrPb-7lLQFf_R2VFmPbLdIzzFII2O8Rk7NoaqH4BqOf40zcz_Y02PPOerf-hyIXUt-fSQtFsQ67NrBaGfMMPVzHtl2-DjCDbvIacda_SLyifqUE3sB6_SUETobMNxG4wHgFWEE4vUYdEqulr9rEuqA_qfR8WHFAcpFbOIGmam0j5IW72iJxTTfW-r_ZruYWhDJ3mHCP0QqHr2KcgRguP1efZGRKiOX-02xBy88MYYNMgNE5ML2k1b4XzI8gl7AHVu33zzltUrN-C1G5MXBsboaOuQXpJEjSmbwSSfbACUdlf9HBvquISaGAsOLN30eBjVorCa2hW-3IdwriaiyPW0IGBnlHM1X-Pl6QBKFuh4yjyQuWKC0aiE',
+    "gruposBuscados":['020-82', '020-81'],
+    "interesados":[3]
     }
 ]
 

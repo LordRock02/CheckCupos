@@ -96,8 +96,5 @@ async function enviarMensaje(chatId,token,mensaje) {
 
 setInterval(() => {
   console.log("Ejecutando script original en modo diagnóstico...");
-    busquedas.forEach((item)=>{
-        getCupos(item);
-    })
-    
+  getCupos('https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMIwreBN2Uo-C89ewetKh2GLXLPvVOtWJLJP9D9atlm-yQ-g6G2tC1ewECm2GnRz-pLkoVOJNBZcsnDN5fe5hsF4Drq6VqOvSd4RPFZlNUnCO5o8AgO9WUo09O_kuybxOVrrW_FFKp44vT3HGYZOm7kpC9tosvZIcVwbxNAjQyJHWOZrH6BrErkmKmj5IlpgqrvEizSW9-S0g9QZ0_QqSpyB3ORibaKLH1rTaIGwpWzKX-Wat5B-raIQ2NaaTHhQ_TVBlIibAENvK8y__vSO0CkqGXlaKAdid-H3TCapM3zT2JhNwNz1I5tuSfoVsml4EXOu7wXDjlH8A1lq_wKKIvarBZXYoqbd76IIF8prSEumJb61wNU_gzq0OjsfFpjo-ZuicB1aWoWNfXlsB7PEhOqZr-jdeG2WcmeuMOO7D5Eo1jGbIjWFQGW554FD6GvJ2UKLgdJuDuAx6L5a-A6H5cxS');  
 }, 5000);
