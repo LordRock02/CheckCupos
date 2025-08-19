@@ -1,7 +1,7 @@
 export const busquedas = [
     {
     "nombreMateria":"Ecuaciones Diferenciales",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW0xHBDMarn018hq03GGlCqMPvMtwbCZr809nxQ-HSq6_8sprRlr3-5GfKdALK1AhgqOYMCfT578bNmoeixFsU_-m3r7F2xNdOElozS69XsVmPQm_Vu3zclxnLqqGoK1SRvOoV7whPXZoSdWQiAQ8xZFPJ3jS6N64AX70qtI_Ri0XPff6On5_BTmOivmgLtJV1M9eVqRnD9UdJPzGtJQcg7T9DrylNjWX__LNheUxKdYRagallJSTLzz-a9pSNgk2Bhc4KkTBtpiyEoVGsmWG2TaYbs7r-KOSvxW2VWSPfsNpHjfMRQMdY7bAnP-51VEFoY35QiP4ZI8_Jfe8e2Tx8dLnC8TDoL4DIIBJX_ZRxx0UZB2SdLpIdXOlkYZHlW-brU6L5z_h0P5kEWB-Zx1s0zApEaO012HY0mNADgk5hCv2HWVPTMG8CmHxKuisBxUAO8VBCAQzzqSTbjNpoWTnFyr',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMIwreBN2Uo-C89ewetKh2GLXLPvVOtWJLJP9D9atlm-yQ-g6G2tC1ewECm2GnRz-pLkoVOJNBZcsnDN5fe5hsF4Drq6VqOvSd4RPFZlNUnCO5o8AgO9WUo09O_kuybxOVrrW_FFKp44vT3HGYZOm7kpC9tosvZIcVwbxNAjQyJHWOZrH6BrErkmKmj5IlpgqrvEizSW9-S0g9QZ0_QqSpyB3ORibaKLH1rTaIGwpWzKX-Wat5B-raIQ2NaaTHhQ_TVBlIibAENvK8y__vSO0CkqGXlaKAdid-H3TCapM3zT2JhNwNz1I5tuSfoVsml4EXOu7wXDjlH8A1lq_wKKIvarBZXYoqbd76IIF8prSEumJb61wNU_gzq0OjsfFpjo-ZuicB1aWoWNfXlsB7PEhOqZr-jdeG2WcmeuMOO7D5Eo1jGbIjWFQGW554FD6GvJ2UKLgdJuDuAx6L5a-A6H5cxS',
     "gruposBuscados":['005-1', '005-3' ,'007-741', '015-25'],
     "interesados":[1, 2]
     },
@@ -55,7 +55,7 @@ export const busquedas = [
     },
      {
     "nombreMateria":"AUDITORIA I",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRaoXSUHhizd8bCactH4VcLkBmHQsNTpl2JlITxIglY3S9JMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT8oUw9WU8Zv4FXaVwGuXzJ7xKypHWJqmvat9MfsGqFWs71NgPF1Je6ybNKHU_cnnO9Ikgl9nxVaqIVlvtVNLNHU_86UhL7NoifpSZE1SWb14bks0XkLAro7NzFyYNmUWfCFsBtnbU3Jc9LAnr6PcotErlZwdX1crub2ZXW-t_SfPI',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMKiCDi1rSwPgmnk02c7aizYhRrrbf1zVXFldpOn6eEkO7hBc80ap9KBwqVC-oqWjzzRQyXobXhEt8q-eOaOaAsUM0D3sp1JGnPL2a_M58P0TkyWXKB89wG-nKwd1mdkm59b87jDfBPuZ4IrPb-7lLQFf_R2VFmPbLdIzzFII2O8RrYxogFGlXyfQKj4A4U8fuc9bP-mU5Iy_OoYS_bVpBr7VikAkkXSXwK3ML6jWfj12mefRmKbIDZ_tUQzeKx_t_KpfABoj1CqJoM397u_-iBYXc0ou0BDVkajV0ZRz2JWqH5_Ah6Abu1ZfPVMA9ZkE0PYpzrmEyPYtzI3wXM6I3PXuY0CpYAlHmzF-XRoTLlapWZkH4kEcmVqcnx2rpnR2lAe1phb1GdrYL6-1OYg6v_lIyM6MI70kn4uZCHYemLsxXzmeOjR4oxAk3NiamkkwmLDE64W7-MPpomUZBznvyTl050onGhbeAWNOkdlyioSqRumeDMv1iRv-Vg6lP4Iavw',
     "gruposBuscados":['020-81'],
     "interesados":[1]
     },
@@ -74,7 +74,7 @@ export const chats = [
         "chatId":"837079577",
         "token":"6727418787:AAEeEp3cnWvp85v_GSDMxM3zj3nlBFiZ9QU"
     },
-    {
+    /*{
         "id":2,
         "nombre":"Valeria Avila",
         "chatId":"1275836942",
@@ -91,7 +91,7 @@ export const chats = [
         "nombre":"Juan Garnica",
         "chatId":"6604461995",
         "token":"6986205215:AAFVRRK-QDk59glPLULz8Th6n58VF0_9g8w"
-    },
+    },*/
     // {
     //     "id":4,
     //     "nombre":"Luis Barajas",

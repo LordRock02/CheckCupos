@@ -45,7 +45,8 @@ async function getCupos(item) {
     // console.log(horarios)
 
     objeto.horarios.forEach((grupo)=>{
-        if(parseInt(grupo.cuposDisponibles)>0 && item.gruposBuscados.includes(grupo.nombreGrupo)){
+        if(true){
+            console.log("prueba")
             let mensaje = ``;
 
             mensaje += `Cupo disponible en: \n\n${objeto.nombreMateria}\n\n`
@@ -127,8 +128,8 @@ async function enviarMensaje(chatId,token,mensaje) {
 
 setInterval(() => {
   console.log("Ejecutando...")
-    busquedas.forEach((item)=>{
-        getCupos(item);
-    })
+  chats.forEach((chat) => {
+    enviarMensaje(chat.chatId, chat.token, `esto es una prueba ${chat.nombre}`)
+  })
     
 }, 5000);
