@@ -11,12 +11,6 @@ export const busquedas = [
     "gruposBuscados":['007-741', '005-1', '015-23', '020-81'],
     "interesados":[]
     },
-     {
-    "nombreMateria":"BASES DE DATOS I",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRacEjDqGZ9qV0Aqi1FH2b2MCD-NT3_SpimhReWzvf3kDtJMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT84wKMn8kBcD-wmkfgyxe6l1wC92J0__m6KyMCSg2ukY9rCE1lZIKw8aP4xR5PerE6iTSCjN4BI6kXuZS3QKhOd-utj0Tx4lgNTChJ8vTY7F3l45mSuG2zNpyNrDaIQ_HQ_6P5KqrKhMBCul-GQzkwXKx-c17L1nWiraVTtFTgGLNqbY5b3MpqdMxOUSaCtuitbokYlhBCqqUaar0FWAMIlg',
-    "gruposBuscados":['020-81'],
-    "interesados":[]
-    },
     {
     "nombreMateria":"FACTORES HUMANOS",
     "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMKiCDi1rSwPgmnk02c7aizYhRrrbf1zVXFldpOn6eEkO7hBc80ap9KBwqVC-oqWjzzRQyXobXhEt8q-eOaOaAsUM0D3sp1JGnPL2a_M58P0TkyWXKB89wG-nKwd1mdkm59b87jDfBPuZ4IrPb-7lLQFf_R2VFmPbLdIzzFII2O8RndLNbfjEXxBhw35LMgBD3vOSaaFat68GjT2dKUCRc_cWs1UV1rjKPo8qI3z2syoCm6hK3Y3E5NvoECvLYIKjvXPGn8-NijAjVvHEWZqBNhJ8hB9W7wg3Ut2yvuteKHWKSJ5U9oXBzwe4b2K-quxTE-hrGpCjJOVO1-dyse2XWVKKmyFepqSXeuEliUtlpZuTDLpNjir4FWAiNOClXCCDvrKlj8bfYhf3U6sJLE_BBcErd0HDguCZNL5fy4PZaD5_zp9tu5LMGDn9hYfE8mBHazAZuS8UByVFICi0NbsOycTe7Dm6mnmE89bpSe1MQlg5ssFmYGu5SUtiv7xrGb_2WTqUiAxKLayTpdq68PyHtkoJaVeb99fdWpskYjdfmu4-w',
@@ -35,12 +29,12 @@ export const busquedas = [
     "gruposBuscados":['020-82'],
     "interesados":[1,3]
     },
-    {
-    "nombreMateria":"DISEÑO ARQUITECTURAL DE SOFTWARE Y PATRONES",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW0xHBDMarn018hq03GGlCqMPvMtwbCZr809nxQ-HSq6_8sprRlr3-5GfKdALK1AhgqOYMCfT578bNmoeixFsU_-QnKV-sUMmjxPTAOkbXMTN1wHrrcWelMPVqhHaTtjsg7s9MrKxjIrQR6XrIAZCdZx2Yhy6bP0o5k-qEEFZpUop7fF8HZA0KXH3G3HQBGwWaxgjIgIfpf5ZVX3_3YCLw4XLAcX1-OTTv9Ym5dVeuGCNPKTxqCOncseExUC4g58ayKiztBRURnIDs5LXnkaQ58CxowraUSgh0Som-UX2tYm8XkIZ2gjLx-I6icpwbfK4pd1-w42jQeVP-ddAwyLW_1DuAN5CtcHpcSV3N5avn2AkCyAO-X63NIlL9QNh4Cb0o71t__Bwx7S_1zvknvjabeOytxr1EAYBkDlwpruoox8BLNoHo9hgG1BObmiXTXCzms9YdKWeGr3hM_W_jhvSmN-iMgqC_wEBd2_xwF4wN8pMSdeIEGaPOS0rYXfTDpFx34',
-    "gruposBuscados":['020-82'],
-    "interesados":[1,3]
-    },
+    // {
+    // "nombreMateria":"DISEÑO ARQUITECTURAL DE SOFTWARE Y PATRONES",
+    // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW0xHBDMarn018hq03GGlCqMPvMtwbCZr809nxQ-HSq6_8sprRlr3-5GfKdALK1AhgqOYMCfT578bNmoeixFsU_-QnKV-sUMmjxPTAOkbXMTN1wHrrcWelMPVqhHaTtjsg7s9MrKxjIrQR6XrIAZCdZx2Yhy6bP0o5k-qEEFZpUop7fF8HZA0KXH3G3HQBGwWaxgjIgIfpf5ZVX3_3YCLw4XLAcX1-OTTv9Ym5dVeuGCNPKTxqCOncseExUC4g58ayKiztBRURnIDs5LXnkaQ58CxowraUSgh0Som-UX2tYm8XkIZ2gjLx-I6icpwbfK4pd1-w42jQeVP-ddAwyLW_1DuAN5CtcHpcSV3N5avn2AkCyAO-X63NIlL9QNh4Cb0o71t__Bwx7S_1zvknvjabeOytxr1EAYBkDlwpruoox8BLNoHo9hgG1BObmiXTXCzms9YdKWeGr3hM_W_jhvSmN-iMgqC_wEBd2_xwF4wN8pMSdeIEGaPOS0rYXfTDpFx34',
+    // "gruposBuscados":['020-82'],
+    // "interesados":[1,3]
+    // },
     {
     "nombreMateria":"REDES DE COMUNICACIONES III",
     "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRacEjDqGZ9qV0Aqi1FH2b2MCD-NT3_SpimhReWzvf3kDtJMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT8cH-4Xi-IoOSAZ-mbHqyKKk5YcKkOR3132CEYBCZV-D_zzpyaoX7dMjESqvyD0W-gCmpY9mPwa02XRkw0owi78ciH7gpXd9y4i7w6o8y6EExUkwD3kZAxZ99ZXkvIrC2TIQj-REA6kxlrEmi4eJ3LkmIDatNv3zZNHD5XA9r7a7etV_qvpUfU-ahcw3mrFGooWDyWFgbGQv9zvMIEjqPgAA',
@@ -80,7 +74,7 @@ export const chats = [
         "chatId":"837079577",
         "token":"6727418787:AAEeEp3cnWvp85v_GSDMxM3zj3nlBFiZ9QU"
     },
-    /*{
+    {
         "id":2,
         "nombre":"Valeria Avila",
         "chatId":"1275836942",
@@ -97,7 +91,7 @@ export const chats = [
         "nombre":"Juan Garnica",
         "chatId":"6604461995",
         "token":"6986205215:AAFVRRK-QDk59glPLULz8Th6n58VF0_9g8w"
-    },*/
+    },
     // {
     //     "id":4,
     //     "nombre":"Luis Barajas",
