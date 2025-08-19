@@ -49,7 +49,7 @@ export const busquedas = [
     },
     {
     "nombreMateria":"SEMINARIO DE INGENIERIA",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=KfDCnOhEMjv-AXgA_sgMKVOArv1_OIsD8Aa6DDTgiW1w6bIcet8QGe_gM1jD8WxWyLiObdmS5bnqQQhMy4HIGqwasVBbahjBtW6OA3ZaDJgwBUxZdYFxcFMMTQPZhnn-paA5E2CpJxA_wiDTaGNksUtQJcwmkB7FFTc26IhGsoE3PAg3_DT2CGUloB-S5UTcXxrSIYN3F0gL46_cwD1iv_Y6coIi4YV--iLPTJ3sT12-rf0s510Dph-gYp6fwFRaV14J-jMyLWCJ4KY5idWQsi4SZE2pZenxcQRfkK6gzgZJMoOJs6LRxJV5GDLMKH6smiDsTXSHYblH0lWzctgCXIX7pD4BXZ72Gww6qQx7jgcsRwvrTyHld_MsxrSnWxT8QFqB-0Ny7Iluck9_J-n9VU8O1p5rsX_ew7nZExUeH_xRxIjJZ_DG1R7d39H3k7sLKA01pf_uhQqKETVjIZ4_iXId3IegUXwvTexN5Epv-Du-59Mmd8NMqw5Auoe5CiF4pchHdGPxsBQaIPGKlDkOaL3MRLnDiJbqA2LtrKdUPf9_itUmIjcNOia2Igh1GekLwBEIWGvouTY-6VdKtuhCXQ',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMIwreBN2Uo-C89ewetKh2GLXLPvVOtWJLJP9D9atlm-yQ-g6G2tC1ewECm2GnRz-pLkoVOJNBZcsnDN5fe5hsF4U5f-SJs8DVXAqqAjgnj8fNtZ_-XmC5GZ3nvemAM540SJAkfyalxXXCN3Z7hWeaMe8laTezSWy3RbBT9zZRLLFaftoiLhNfElTPEdb7Z8NJaNpPGe9Mee6zULaCi4L-VAuyQLwrpFu0GXVPeaPUyulg2nTzj9T-Mh-zJ6yFweiKz_ETkZgmBP_oHCLF3Jj4ASipLbHmUs0Gyp0ocA8ZpjmcbxgwB8JqBNM9i0Tm-qMWH7qJLQP8tGLo5MTGPznsYoEAfVLsj8l1FvWWLSprIfBhvS_bFRiNtsq57QJz9YubuazJ1AcvvxMKzx1ETskci9LXCwuZRVRBjHtpmV_fLf1g379gLJl8dzUbw_TcPzM5o-pPfEFDnDYTlaBPTwrTzqSjzy8dfzfmvZNVfvbagxOgSbmCvTXF2X0gGka2hnr4s',
     "gruposBuscados":['020-81', '020-82', '020-84'],
     "interesados":[1,3]
     },
