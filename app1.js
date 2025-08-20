@@ -7,104 +7,87 @@ import {busquedas,chats} from './data.js'
 // Function starts here
 async function getCupos(item) {
   try {
-    const response = await fetch(item.link);
+    // ESTA ES LA PARTE NUEVA:
+    // Objeto con las cabeceras que simulan un navegador real
+    const headers = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
+    };
+
+    // Y AQUÍ APLICAMOS EL CAMBIO:
+    // Pasamos el objeto 'headers' a la petición fetch
+    const response = await fetch(item.link, { headers: headers });
+
+    // --- El resto de tu código sigue igual ---
 
     const body = await response.text();
 
-    const $ = cheerio.load(body);
+    // Agregamos una comprobación por si la respuesta sigue siendo un error
+    if (!response.ok) {
+        console.error(`Error al acceder a ${item.nombreMateria}: ${response.status}`);
+        console.error(body); // Muestra el HTML del error (ej. 403 Forbidden)
+        return; // No continúa si hay error
+    }
 
+    const $ = cheerio.load(body);
     const nombreMateria = $('.nombreEspacio').text();
     
+    // Si no encuentra el nombre, la página no cargó el contenido esperado
+    if (!nombreMateria) {
+        console.log(`Contenido no encontrado para ${item.nombreMateria}. La página puede estar protegida.`);
+        return;
+    }
+
     const horarios = [];
 
-    console.log(body)
-
     $('tr[onmouseover]').map((index, fila) => {
-      
-        let nombreGrupo = $(fila).find('.cuadro_plano:nth-child(1)').text();
-        nombreGrupo=nombreGrupo.replace(/\s/g, '');
-
-        let cuposTotales = $(fila).find('.cuadro_plano:nth-child(9)').text();
-        cuposTotales=cuposTotales.replace(/\s/g, '');
-
-        let cuposDisponibles= $(fila).find('.cuadro_plano:nth-child(10)').text();
-        cuposDisponibles=cuposDisponibles.replace(/\s/g, '');
-
+      let nombreGrupo = $(fila).find('.cuadro_plano:nth-child(1)').text().replace(/\s/g, '');
+      let cuposTotales = $(fila).find('.cuadro_plano:nth-child(9)').text().replace(/\s/g, '');
+      let cuposDisponibles = $(fila).find('.cuadro_plano:nth-child(10)').text().replace(/\s/g, '');
 
       horarios.push({
         nombreGrupo,
         cuposTotales,
         cuposDisponibles
       });
-      
     });
 
-    let objeto = {nombreMateria,horarios}
-
-    //console.log("Monitoreando: "+nombreMateria)
-
-    // console.log(horarios)
+    let objeto = {nombreMateria, horarios};
 
     objeto.horarios.forEach((grupo)=>{
-        if(parseInt(grupo.cuposDisponibles)>0 && item.gruposBuscados.includes(grupo.nombreGrupo)){
-            let mensaje = ``;
-
-            mensaje += `Cupo disponible en: \n\n${objeto.nombreMateria}\n\n`
-            mensaje += `Grupo: ${grupo.nombreGrupo} \n`
-            mensaje += `Cupos totales: ${grupo.cuposTotales} \n`
-            mensaje += `Disponibles: ${grupo.cuposDisponibles}\n`
-
-            
-
-            console.log("-----------------------------------------------------------------------------------------------------")
-
-
-            var fechaHoraActual = new Date();            
-            // Obtener los componentes de la fecha y hora
-            var año = fechaHoraActual.getFullYear();
-            var mes = ('0' + (fechaHoraActual.getMonth() + 1)).slice(-2); // Sumar 1 porque los meses van de 0 a 11
-            var dia = ('0' + fechaHoraActual.getDate()).slice(-2);
-            var horas = ('0' + fechaHoraActual.getHours()).slice(-2);
-            var minutos = ('0' + fechaHoraActual.getMinutes()).slice(-2);
-            var segundos = ('0' + fechaHoraActual.getSeconds()).slice(-2);
-
-            // Crear la cadena de fecha y hora en el formato deseado
-            var formatoFechaHora = año + '-' + mes + '-' + dia + ' ' + horas + ':' + minutos + ':' + segundos;
-            
-
-            console.log(`\n${formatoFechaHora} \n`)
-
-
-            console.log(mensaje)
-            
-
-            //Notificar a cada persona
-            item.interesados.forEach((interesado)=>{
-              const chat = chats.filter((chat)=> chat.id == interesado)
-              
-              console.log("Enviando mensaje a : "+chat[0].nombre)
-                enviarMensaje(chat[0].chatId,chat[0].token,mensaje)
-            })
-
-            console.log("-----------------------------------------------------------------------------------------------------")
-        }
-
+      if(parseInt(grupo.cuposDisponibles) > 0 && item.gruposBuscados.includes(grupo.nombreGrupo)){
+        let mensaje = ``;
+        mensaje += `Cupo disponible en: \n\n${objeto.nombreMateria}\n\n`;
+        mensaje += `Grupo: ${grupo.nombreGrupo} \n`;
+        mensaje += `Cupos totales: ${grupo.cuposTotales} \n`;
+        mensaje += `Disponibles: ${grupo.cuposDisponibles}\n`;
         
-    })
+        console.log("-----------------------------------------------------------------------------------------------------");
 
-    // item.interesados.forEach((interesado)=>{
+        var fechaHoraActual = new Date();
+        var formatoFechaHora = new Intl.DateTimeFormat('es-CO', {
+            timeZone: 'America/Bogota',
+            year: 'numeric', month: '2-digit', day: '2-digit',
+            hour: '2-digit', minute: '2-digit', second: '2-digit',
+            hour12: false
+        }).format(fechaHoraActual);
 
-    //   const chat = chats.filter((chat)=> chat.id == interesado)
-      
-    //   console.log("Enviando mensaje a : "+chat[0].nombre)
-    //   enviarMensaje(chat[0].chatId,chat[0].token,"Mensaje telegram materias")
-    // })
+        console.log(`\n${formatoFechaHora} \n`);
+        console.log(mensaje);
+        
+        item.interesados.forEach((interesado)=>{
+          const chat = chats.find((chat)=> chat.id == interesado);
+          if (chat) {
+            console.log("Enviando mensaje a : "+chat.nombre);
+            enviarMensaje(chat.chatId, chat.token, mensaje);
+          }
+        });
+        console.log("-----------------------------------------------------------------------------------------------------");
+      }
+    });
     
   } catch (error) {
     console.log(error);
   }
-
-  //console.log("--------------------------------------------------------------------------------------------------------------------------------------")
 }
 
 
