@@ -35,12 +35,12 @@ export const busquedas = [
     // "gruposBuscados":['020-82'],
     // "interesados":[1,3]
     // },
-    // {
-    // "nombreMateria":"REDES DE COMUNICACIONES III",
-    // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2Kp59kTkpDjuHpUPMqBayuOtHkS2Ua1VZVwD1lcqSaEZJbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ86MMGcWfPvJEtaDFy2sB2T2S5NcwVCuXPsH0aGb4kx9BEE1FSG7S5exTraxvux3cgt5T6HJ1fAp2N7xpQwMqwP2dbGMAIA_JRLAPsdZqh-MGoPUP4QOH9vv9dWyRuLZTco59go4hAgZbta0sNEOQtw92Mlux9667Bg5A4jdkVcD5gybB_4X26V0pt6VCFUB97EO04jvhTt0qigLbeqTKjiw',
-    // "gruposBuscados":['020-81', '020-82', '020-84'],
-    // "interesados":[1,2]
-    // },
+    {
+    "nombreMateria":"REDES DE COMUNICACIONES III",
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2YqltuzYVb060p8RVqOhhq3c8ddaNXelm-0XN8lkne0PnPcYM6jgSkGCmqDlMOZ_4i_JAsCcGl62PZggDpIsWXr9ofbH4biqEe6c7bA9SH7iozQODQFHVfPLWwAYA3sxtxSb8tWEtNa1BpskpkAy2jBMp7UVwJKMNruzbE_yv4qy1ITGxa7dh288eL2I9AFiqVfWi_ilgErq6dG6o6ANyzZlxKRoo9f_8Ux3gLHHQG8DACkdOGjsvv9fiSx3Rz1V7naHhmAzDoDjhFD5Z0pryHq-qvXCleLf9rorrBuOmY9aqMgm2St33M3bFvmugBGpHFohvB6SNHgtEAs8-eptCMevqZDN7gMA8e-Pt-eo76KT9HxdJmJWaWE9Dot7TFYH-1i5Z7FmoPYMSJfl5Vtz1PZGcovnmAbNhqjDLAcofbptbYtmWnAIOn66n85DE3CsMYxpnaSKXYcLVxI62Cpch-ZQM8TUPk1TQ9_PJIqpAdvFf0hhGHYQZ8DBbUVLNhP9tw',
+    "gruposBuscados":['020-81', '020-82', '020-84'],
+    "interesados":[1,2]
+    },
     // {
     // "nombreMateria":"SEMINARIO DE INGENIERIA",
     // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMIwreBN2Uo-C89ewetKh2GLXLPvVOtWJLJP9D9atlm-yQ-g6G2tC1ewECm2GnRz-pLkoVOJNBZcsnDN5fe5hsF4U5f-SJs8DVXAqqAjgnj8fNtZ_-XmC5GZ3nvemAM540SJAkfyalxXXCN3Z7hWeaMe8laTezSWy3RbBT9zZRLLFaftoiLhNfElTPEdb7Z8NJaNpPGe9Mee6zULaCi4L-VAuyQLwrpFu0GXVPeaPUyulg2nTzj9T-Mh-zJ6yFweiKz_ETkZgmBP_oHCLF3Jj4ASipLbHmUs0Gyp0ocA8ZpjmcbxgwB8JqBNM9i0Tm-qMWH7qJLQP8tGLo5MTGPznsYoEAfVLsj8l1FvWWLSprIfBhvS_bFRiNtsq57QJz9YubuazJ1AcvvxMKzx1ETskci9LXCwuZRVRBjHtpmV_fLf1g379gLJl8dzUbw_TcPzM5o-pPfEFDnDYTlaBPTwrTzqSjzy8dfzfmvZNVfvbagxOgSbmCvTXF2X0gGka2hnr4s',
