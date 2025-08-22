@@ -13,13 +13,13 @@ export const busquedas = [
     // },
     {
     "nombreMateria":"FACTORES HUMANOS",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2KfVn6rsV_xZ8ZZTLBs6aTD3MsJjDvN5WYQlxEqTnYo0NbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ8OFdAiEcw_j3xjq5imdMo2dGKwIkzm-aP6Me_e3XDmHlZYa7yjCGTMatLVDsm1dMLc_H7V2GPdWxu20khTMkpVg2dTZ9-naJe7nMwBmq2m5yiK4hzHQsR3Y4EHgpqqXpIbHZkpBGDftfDYUMu6QPMhhiW_cJO7hBdUKbH_KtEk7kIOnwxyCz58kJGd7RjYpVDtd1I5k-ufDOasrziO6ditA',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2aNUPOinvh0DqnXSh6kGeF-nBV-N5l59mm8cwqIkkjdGLaU6505yaUrQ9EGzXwKNgrzZAI0X-_Y6QSDwHH_FpAFf1Iyicw5dLbfvOsifYbO_8NIqhBxGB4t7c7V6c9iKulXgWCcuB6bFlZJLqTXAmqPvDlk5_DoCF60VUeocRMoKKtJvyTCrGrzhiYuh4hNoi1HaYNzOxvBdo_zUAw3ycGbQsG8xs_10jRs5oqqrS3UToBDQ9Fnq_dK_fBEvDxQElaPdLoqHTw357Gin7IGyrFKyNby0uOPvvAtI7fNLskDrOwixnqWTJFO_wY2QDRInfwFO6qhiQRjetV6XrZb7iHtyNXPR6tfUlP42061I545HFfMDnPPrZHpQUMbC_ku0j6yFPapFDSEozC86flcibtI30BMB2m0Xs0WEbcv5LBeYYj---41Xl97QUX_sQW_jwk4dIkkf2xVL3N2v36uKlDIb8wfo2Dtn37YZjkGqxk7bmlO-Dv1JY60_dfnamlW0HJTZGcbhhFVx0rGkXLOSIFPKxn9O6GqnduMg57b6wXiGA',
     "gruposBuscados":['020-82', '020-81'],
     "interesados":[1, 2, 4]
     },
     {
     "nombreMateria":"INTELIGENCIA ARTIFICIAL I",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2KfVn6rsV_xZ8ZZTLBs6aTD3MsJjDvN5WYQlxEqTnYo0NbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ8clBjpAaGn4Fa-EhqWI9FrjOciJwkMGUR4IHACbgiQe1GOE0nuWe7b-TjY9CP_XdYRLqOMQIP7JzahJVmPW_w2SjD7hXDj1sCzY5aI-mEWipIh9oLMVlggUQgYSIe1MqHqQnrDjcYRV2-hmDMWBzrbOv1wiQCIUSwkp6t5pIGxzRn6dcah3FFoBs2Q-EW26RqqrDyx9e_SbKA-PcQB36RvA',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2aNUPOinvh0DqnXSh6kGeF-nBV-N5l59mm8cwqIkkjdGLaU6505yaUrQ9EGzXwKNgrzZAI0X-_Y6QSDwHH_FpAFf1Iyicw5dLbfvOsifYbO_8NIqhBxGB4t7c7V6c9iKulXgWCcuB6bFlZJLqTXAmqPvDlk5_DoCF60VUeocRMoKKtJvyTCrGrzhiYuh4hNoi1HaYNzOxvBdo_zUAw3ycGbQsG8xs_10jRs5oqqrS3UToBDQ9Fnq_dK_fBEvDxQElaPdLoqHTw357Gin7IGyrFKyNby0uOPvvAtI7fNLskDrOwixnqWTJFO_wY2QDRInfwFO6qhiQRjetV6XrZb7iHtp7dv__18FNWTMmUEFTsJrU68vEuKdfnYrijVi96yPxlbyXTUPyFvCH6e6r2TWcGi_2tnntwU_pMfO01-1bAP6PnGclxUVtzQ4hmRCNciuernta-DAe_b9ZCuuf_cyZ8qS8SkyKfCroyeQdatYsciCbIfq78gquDbTUUPfdWP2sN7dKVWUcJeZ2mA15iPwsj9doWXyqF4z-4p_Ng2W7oYKg',
     "gruposBuscados":['020-81'],
     "interesados":[1,2]
     },
@@ -35,12 +35,12 @@ export const busquedas = [
     // "gruposBuscados":['020-82'],
     // "interesados":[1,3]
     // },
-    {
-    "nombreMateria":"REDES DE COMUNICACIONES III",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2Kp59kTkpDjuHpUPMqBayuOtHkS2Ua1VZVwD1lcqSaEZJbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ86MMGcWfPvJEtaDFy2sB2T2S5NcwVCuXPsH0aGb4kx9BEE1FSG7S5exTraxvux3cgt5T6HJ1fAp2N7xpQwMqwP2dbGMAIA_JRLAPsdZqh-MGoPUP4QOH9vv9dWyRuLZTco59go4hAgZbta0sNEOQtw92Mlux9667Bg5A4jdkVcD5gybB_4X26V0pt6VCFUB97EO04jvhTt0qigLbeqTKjiw',
-    "gruposBuscados":['020-81', '020-82', '020-84'],
-    "interesados":[1,2]
-    },
+    // {
+    // "nombreMateria":"REDES DE COMUNICACIONES III",
+    // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2Kp59kTkpDjuHpUPMqBayuOtHkS2Ua1VZVwD1lcqSaEZJbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ86MMGcWfPvJEtaDFy2sB2T2S5NcwVCuXPsH0aGb4kx9BEE1FSG7S5exTraxvux3cgt5T6HJ1fAp2N7xpQwMqwP2dbGMAIA_JRLAPsdZqh-MGoPUP4QOH9vv9dWyRuLZTco59go4hAgZbta0sNEOQtw92Mlux9667Bg5A4jdkVcD5gybB_4X26V0pt6VCFUB97EO04jvhTt0qigLbeqTKjiw',
+    // "gruposBuscados":['020-81', '020-82', '020-84'],
+    // "interesados":[1,2]
+    // },
     // {
     // "nombreMateria":"SEMINARIO DE INGENIERIA",
     // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=RlUsXpODZrfht3nFH6Vx_SQXfFpFrphxZLEM9P-teMIwreBN2Uo-C89ewetKh2GLXLPvVOtWJLJP9D9atlm-yQ-g6G2tC1ewECm2GnRz-pLkoVOJNBZcsnDN5fe5hsF4U5f-SJs8DVXAqqAjgnj8fNtZ_-XmC5GZ3nvemAM540SJAkfyalxXXCN3Z7hWeaMe8laTezSWy3RbBT9zZRLLFaftoiLhNfElTPEdb7Z8NJaNpPGe9Mee6zULaCi4L-VAuyQLwrpFu0GXVPeaPUyulg2nTzj9T-Mh-zJ6yFweiKz_ETkZgmBP_oHCLF3Jj4ASipLbHmUs0Gyp0ocA8ZpjmcbxgwB8JqBNM9i0Tm-qMWH7qJLQP8tGLo5MTGPznsYoEAfVLsj8l1FvWWLSprIfBhvS_bFRiNtsq57QJz9YubuazJ1AcvvxMKzx1ETskci9LXCwuZRVRBjHtpmV_fLf1g379gLJl8dzUbw_TcPzM5o-pPfEFDnDYTlaBPTwrTzqSjzy8dfzfmvZNVfvbagxOgSbmCvTXF2X0gGka2hnr4s',
@@ -49,13 +49,13 @@ export const busquedas = [
     // },
      {
     "nombreMateria":"AUDITORIA I",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2KfVn6rsV_xZ8ZZTLBs6aTD3MsJjDvN5WYQlxEqTnYo0NbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ8UXqoJ1vPyyCQM-0B3txr9xydhRcjQi80SETvXfz991J4wswWiqa4d5daVluyavOyqKWg2h3i1-ivtHpOecyKsa8qNPew6jWQFW0n1XNQbUmsMHLA3qg6ROzv-TIvCBUY0B0wswbiNcx54pm5EUyi6hI_Ztk6p36cwtLNQq9PJUo',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2aNUPOinvh0DqnXSh6kGeF-nBV-N5l59mm8cwqIkkjdGLaU6505yaUrQ9EGzXwKNgrzZAI0X-_Y6QSDwHH_FpAFf1Iyicw5dLbfvOsifYbO_8NIqhBxGB4t7c7V6c9iKulXgWCcuB6bFlZJLqTXAmqPvDlk5_DoCF60VUeocRMoKKtJvyTCrGrzhiYuh4hNoi1HaYNzOxvBdo_zUAw3ycGbQsG8xs_10jRs5oqqrS3UToBDQ9Fnq_dK_fBEvDxQElaPdLoqHTw357Gin7IGyrFKyNby0uOPvvAtI7fNLskDrOwixnqWTJFO_wY2QDRInfwFO6qhiQRjetV6XrZb7iHtmdVc-wkB1bSlesBs2sKF6zjwC9mZo8zsbvBOovfY151Huoy8flrg-sF20dkrn_UJcE2FbnPkHgsFNE9n8qIo_MzGhJRqsZ5t8S02K6Aev3z6Mz4z3odWvezhxA908l0OA4S58l89scFs2bGc7YFSsG7Y_Yp_6BJE_F4IsyVYoK4',
     "gruposBuscados":['020-81'],
     "interesados":[1, 2]
     },
      {
     "nombreMateria":"PLANEACIÓN DE SISTEMAS DE INFORMACIÓN",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqoZmIG769t0zOQqvm32FeNZz8GlHByXQpiu_3F6S7yZy9oDWg-DrRN4dGkBWStZPePLwUpsn-7WRuFrHtW5JTKvUY2hJLwaFLrZJX24n7mKLiGQ2EjnosKibrY11FkEbEHu-roXPCAWAXpN-hWxauRNc_2KSFu6I9iv2yZb5lxw2sTUKRc3ZXf8MIcLfhJH-1pDW8O9wBbT3u5cOWXOQ2KfVn6rsV_xZ8ZZTLBs6aTD3MsJjDvN5WYQlxEqTnYo0NbV3bEGseuPKH-F3ujRZmpacKFOGpsdfriQAEniiANa8BXJI3yPTxgMPswdSmIyoflvp3IozxzefevegrbviZ8L0lK1UYbWWwTQsaCZ1QOm6qG_pg6gxHIkCa1BHmKJFmX4gmPM5HGPpqnfohE5_kotS-ATwIxTIbK-BJXJmEzSbfPKDiyFE5ifrvzPOPUV_P-rjHVXh9AVqrJNEyngVjaWOkYTj57tlp_iQ-vZw-om2mWRg4SYk17usZVa8SD5Y-xsUt2BFXMjP1v2L9DBym19w2Tw6PsRUVSznEHj_ME5A',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2aNUPOinvh0DqnXSh6kGeF-nBV-N5l59mm8cwqIkkjdGLaU6505yaUrQ9EGzXwKNgrzZAI0X-_Y6QSDwHH_FpAFf1Iyicw5dLbfvOsifYbO_8NIqhBxGB4t7c7V6c9iKulXgWCcuB6bFlZJLqTXAmqPvDlk5_DoCF60VUeocRMoKKtJvyTCrGrzhiYuh4hNoi1HaYNzOxvBdo_zUAw3ycGbQsG8xs_10jRs5oqqrS3UToBDQ9Fnq_dK_fBEvDxQElaPdLoqHTw357Gin7IGyrFKyNby0uOPvvAtI7fNLskDrOwixnqWTJFO_wY2QDRInfwFO6qhiQRjetV6XrZb7iHtRT1IMhDmssdL824ZTi0lhQ12kt_sUwlXKZHFS-t_l8u5mem80L3yNePwu72CjTz39DMP-UAtjl_qvvlSES6PkgqGpBcTlhA2GAhuqM65FV8UbIs59bLUjoIvtVt2R8HPxh4X9pz5et-_cL8ehSEi4_ugOkijHb0UKMgTQa9fFO-SrlSLc2iiBma4awErwHXq4bPieVX3nhisfrWj7TOPSQ',
     "gruposBuscados":['020-82'],
     "interesados":[1, 2]
     },
@@ -65,15 +65,15 @@ export const busquedas = [
     // "gruposBuscados":['020-82', '020-81'],
     // "interesados":[3]
     // },
-     {
-    "nombreMateria":"ECONOMIA",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqmw85D7dlDWVTbPXiGPSycrc_S4LfZTAYhrKyVHTAv7ndPmtVYFpx2h0aWa_MrvGISB0YwE3tOrsAkQkRCvQq62V04vWKWKRIrVU5NjTfsZ5yE81BIGxb2c-eqzg8EN4rXDNC2IrkeoBfiEajhXL0QtQjhiMRnCUp33gDE_CPNuMYBW0edcJ11bS_YVm05CA6LX7jto8IPyEL3Pmxc6SUpr4VMsqdAsJjIEEpacP-BhbeAahzmF2eB_ImJqD1sy1ozSBwOqXTn8TpzNsFXRgI_9bKt0eg4LyeDF3u9_XZRyejoam4lL5_s21WFMZiA53ztOZoDgdzOyvYik_UCibWk_dl5WN1Xz-wFYuj9WyHbn3hfEKmrkiLO9JdpR824aGBXVf0JAQrIWdBfmoDkdeCsium7Due_TLo6JLZA54OISDgQepk0s3jUW8SOwfIZ6ajOWP7XdBDrGDYZTNQ-rmGj',
-    "gruposBuscados":['007-743', '005-1'],
-    "interesados":[4]
-    },
+    //  {
+    // "nombreMateria":"ECONOMIA",
+    // "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqmw85D7dlDWVTbPXiGPSycrc_S4LfZTAYhrKyVHTAv7ndPmtVYFpx2h0aWa_MrvGISB0YwE3tOrsAkQkRCvQq62V04vWKWKRIrVU5NjTfsZ5yE81BIGxb2c-eqzg8EN4rXDNC2IrkeoBfiEajhXL0QtQjhiMRnCUp33gDE_CPNuMYBW0edcJ11bS_YVm05CA6LX7jto8IPyEL3Pmxc6SUpr4VMsqdAsJjIEEpacP-BhbeAahzmF2eB_ImJqD1sy1ozSBwOqXTn8TpzNsFXRgI_9bKt0eg4LyeDF3u9_XZRyejoam4lL5_s21WFMZiA53ztOZoDgdzOyvYik_UCibWk_dl5WN1Xz-wFYuj9WyHbn3hfEKmrkiLO9JdpR824aGBXVf0JAQrIWdBfmoDkdeCsium7Due_TLo6JLZA54OISDgQepk0s3jUW8SOwfIZ6ajOWP7XdBDrGDYZTNQ-rmGj',
+    // "gruposBuscados":['007-743', '005-1'],
+    // "interesados":[4]
+    // },
      {
     "nombreMateria":"INGENIERIA ECONOMICA",
-    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=5CtKJkeVUC7ZPdET0bCfWyX7nKuvYIiXMxwfZtPYDpqmw85D7dlDWVTbPXiGPSycrc_S4LfZTAYhrKyVHTAv7ndPmtVYFpx2h0aWa_MrvGISB0YwE3tOrsAkQkRCvQq62V04vWKWKRIrVU5NjTfsZ5yE81BIGxb2c-eqzg8EN4ruMMVPhkn1gRjgMGFD-NNM5m34WmQq9dX7EFfCke6zKO1blOj1RH-7cU5ifeHfT14z_wQwhPez2AYcJk-UWdKGBNWe_6It3D8nQ_nDwUTEbErv922J6c3arcAvztMPn4TCVwSUu0-T6QIVaWg1QsX40DeujUWUVl9YTwHRO3197PioGpnhyOsOff7uiDRfQnBEIb0viFisielmjWu2Md0tBnRQdsYj9hcQvUHg5IIRNCxx3Xt3Fwan6arYDq5H7wgeoRrml47sfxnX8rw5LdudFSWUMt8OIycUCqLgmCisVasamvpmf3lWoqKCm9bOMAMemMv73rG1lKHDi8wYGOmn',
+    "link": 'https://estudiantes.portaloas.udistrital.edu.co/academicopro/index.php?index=cRNFoZGixiQMBFAn3q_4INwU1-FKLRNXdNflzRLuq2YqltuzYVb060p8RVqOhhq3c8ddaNXelm-0XN8lkne0PnPcYM6jgSkGCmqDlMOZ_4i_JAsCcGl62PZggDpIsWXr6zk32BV0A28Y1TaOqQekwhdwPbDFtUAX9WbWJ1LWyg3jlmS99LkZiIVN2y-oV79NMmoQH-2W_px_LZ3q1amXeoHFD-4mziuQOY84l1xpEoXXjLa_GJsRjXpd7WXJGUO-wypmD5H5zCcGr1Y-wdRwCVNB_lWgivwaY8G97G_QUaABU1hT6uVdyyIrPxNzZZIhziaUPhpDeiLL1Fl7zc1mgXnLomsp-RC-58sxmCU7fY5JDLhojxsZCZEUkBi-CxYK5tJ44FiN3_GCBB3NUpCmVUGR4xysL8b38b3w8ol75pUukqinODCpAYgp5IOZyovawmfAvOFouJmODvMdd5pBC-8Vk3UNPOGE96eozSlykoh-Ck3n1R7k1VQZiNLjwsAR',
     "gruposBuscados":['020-82'],
     "interesados":[4]
     }

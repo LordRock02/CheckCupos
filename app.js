@@ -17,6 +17,10 @@ async function getCupos(item) {
     
     const horarios = [];
 
+    //console.log(`status ${response.status}: ${response.statusText}`)
+
+    //console.log(body);
+
 
     $('tr[onmouseover]').map((index, fila) => {
       
@@ -35,6 +39,8 @@ async function getCupos(item) {
         cuposTotales,
         cuposDisponibles
       });
+
+      //console.log(`grupo : ${nombreGrupo}, cupos totales: ${cuposTotales}, disponibles: ${cuposDisponibles}`);
       
     });
 
@@ -130,5 +136,5 @@ setInterval(() => {
     busquedas.forEach((item)=>{
         getCupos(item);
     })
-    
+  
 }, 5000);

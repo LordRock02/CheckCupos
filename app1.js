@@ -1,118 +1,107 @@
-// Importing the NPM packages that we installed
+// Importamos los paquetes necesarios. Ahora usamos puppeteer.
+import puppeteer from 'puppeteer';
 import * as cheerio from 'cheerio';
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'; // Importación añadida para asegurar compatibilidad
+import { busquedas, chats } from './data.js';
 
-import {busquedas,chats} from './data.js'
-
-// Function starts here
 async function getCupos(item) {
+  let browser; // Definimos browser fuera del try para poder cerrarlo en el finally
   try {
-    // ESTA ES LA PARTE NUEVA:
-    // Objeto con las cabeceras que simulan un navegador real
-    const headers = {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36'
-    };
+    // 1. Lanzamos una instancia del navegador (CON LA CORRECCIÓN APLICADA)
+    browser = await puppeteer.launch({ args: ['--no-sandbox', '--disable-setuid-sandbox'] });
 
-    // Y AQUÍ APLICAMOS EL CAMBIO:
-    // Pasamos el objeto 'headers' a la petición fetch
-    const response = await fetch(item.link, { headers: headers });
+    // 2. Abrimos una nueva página
+    const page = await browser.newPage();
+    
+    // Le decimos a la página que se "disfrace" de un navegador normal
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36');
 
-    // --- El resto de tu código sigue igual ---
+    // 3. Vamos a la URL. Puppeteer esperará a que se ejecute el JavaScript y ocurra la redirección.
+    await page.goto(item.link, { waitUntil: 'networkidle0' }); // Espera a que la página esté completamente cargada
 
-    const body = await response.text();
-
-    // Agregamos una comprobación por si la respuesta sigue siendo un error
-    if (!response.ok) {
-        console.error(`Error al acceder a ${item.nombreMateria}: ${response.status}`);
-        console.error(body); // Muestra el HTML del error (ej. 403 Forbidden)
-        return; // No continúa si hay error
-    }
+    // 4. Obtenemos el contenido HTML FINAL de la página
+    const body = await page.content();
 
     const $ = cheerio.load(body);
-    const nombreMateria = $('.nombreEspacio').text();
-    
-    // Si no encuentra el nombre, la página no cargó el contenido esperado
-    if (!nombreMateria) {
-        console.log(`Contenido no encontrado para ${item.nombreMateria}. La página puede estar protegida.`);
-        return;
-    }
 
+    const nombreMateria = $('.nombreEspacio').text();
     const horarios = [];
 
-    $('tr[onmouseover]').map((index, fila) => {
-      let nombreGrupo = $(fila).find('.cuadro_plano:nth-child(1)').text().replace(/\s/g, '');
-      let cuposTotales = $(fila).find('.cuadro_plano:nth-child(9)').text().replace(/\s/g, '');
-      let cuposDisponibles = $(fila).find('.cuadro_plano:nth-child(10)').text().replace(/\s/g, '');
+    // Si no encuentra la materia, es porque el link expiró.
+    if (!nombreMateria) {
+      console.log(`\nAVISO: No se pudo obtener la materia para el link. Es muy probable que el enlace haya expirado. Por favor, actualízalo.`);
+      await browser.close(); // Cerramos el navegador
+      return;
+    }
 
-      horarios.push({
-        nombreGrupo,
-        cuposTotales,
-        cuposDisponibles
-      });
+    console.log(`\nMonitoreando: ${nombreMateria.trim()}`);
+
+    // ¡SELECTORES CORREGIDOS! Apuntamos a la tabla correcta y a las celdas 'td'.
+    $('.contenidotabla tr[onmouseover]').map((index, fila) => {
+      let nombreGrupo = $(fila).find('td:nth-child(1)').text().trim();
+      let cuposTotales = $(fila).find('td:nth-child(9)').text().trim();
+      let cuposDisponibles = $(fila).find('td:nth-child(10)').text().trim();
+
+      // Hacemos una validación para asegurarnos de que estamos extrayendo números
+      if (nombreGrupo && !isNaN(parseInt(cuposDisponibles))) {
+        horarios.push({
+          nombreGrupo,
+          cuposTotales,
+          cuposDisponibles
+        });
+      }
     });
 
-    let objeto = {nombreMateria, horarios};
+    let objeto = { nombreMateria, horarios };
 
-    objeto.horarios.forEach((grupo)=>{
-      if(parseInt(grupo.cuposDisponibles) > 0 && item.gruposBuscados.includes(grupo.nombreGrupo)){
+    objeto.horarios.forEach((grupo) => {
+      if (parseInt(grupo.cuposDisponibles) > 0 && item.gruposBuscados.includes(grupo.nombreGrupo)) {
         let mensaje = ``;
-        mensaje += `Cupo disponible en: \n\n${objeto.nombreMateria}\n\n`;
-        mensaje += `Grupo: ${grupo.nombreGrupo} \n`;
-        mensaje += `Cupos totales: ${grupo.cuposTotales} \n`;
-        mensaje += `Disponibles: ${grupo.cuposDisponibles}\n`;
-        
-        console.log("-----------------------------------------------------------------------------------------------------");
+        mensaje += `✅ ¡Cupo disponible encontrado! ✅\n\n`;
+        mensaje += `Materia: ${objeto.nombreMateria.trim()}\n`;
+        mensaje += `Grupo: ${grupo.nombreGrupo}\n`;
+        mensaje += `Cupos totales: ${grupo.cuposTotales}\n`;
+        mensaje += `Disponibles: ${grupo.cuposDisponibles}\n\n`;
+        mensaje += `Link (puede expirar): ${item.link}`;
 
-        var fechaHoraActual = new Date();
-        var formatoFechaHora = new Intl.DateTimeFormat('es-CO', {
-            timeZone: 'America/Bogota',
-            year: 'numeric', month: '2-digit', day: '2-digit',
-            hour: '2-digit', minute: '2-digit', second: '2-digit',
-            hour12: false
-        }).format(fechaHoraActual);
-
-        console.log(`\n${formatoFechaHora} \n`);
-        console.log(mensaje);
-        
-        item.interesados.forEach((interesado)=>{
-          const chat = chats.find((chat)=> chat.id == interesado);
+        item.interesados.forEach((interesado) => {
+          const chat = chats.find((chat) => chat.id == interesado);
           if (chat) {
-            console.log("Enviando mensaje a : "+chat.nombre);
+            console.log("Enviando mensaje a: " + chat.nombre);
             enviarMensaje(chat.chatId, chat.token, mensaje);
           }
         });
-        console.log("-----------------------------------------------------------------------------------------------------");
       }
     });
-    
+
   } catch (error) {
-    console.log(error);
+    console.error("Ocurrió un error en getCupos:", error);
+  } finally {
+    // 5. Nos aseguramos de cerrar el navegador siempre, incluso si hay un error.
+    if (browser) {
+      await browser.close();
+    }
   }
 }
 
-
-async function enviarMensaje(chatId,token,mensaje) {
-  
-    const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(mensaje)}`;
-  
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-  
-      if (data.ok) {
-        console.log('Mensaje enviado con éxito.');
-      } else {
-        console.error('Error al enviar el mensaje:', data.description);
-      }
-    } catch (error) {
-      console.error('Error de red:', error.message);
+async function enviarMensaje(chatId, token, mensaje) {
+  const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(mensaje)}`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    if (data.ok) {
+      console.log('Mensaje de Telegram enviado con éxito.');
+    } else {
+      console.error('Error al enviar el mensaje de Telegram:', data.description);
     }
+  } catch (error) {
+    console.error('Error de red al enviar a Telegram:', error.message);
   }
+}
 
+// Se recomienda un intervalo más largo para no saturar el servidor.
 setInterval(() => {
-  console.log("Ejecutando...")
-    busquedas.forEach((item)=>{
-        getCupos(item);
-    })
-    
-}, 5000);
+  busquedas.forEach((item) => {
+    getCupos(item);
+  });
+}, 5000); // CORREGIDO a 60 segundos para evitar bloqueos
